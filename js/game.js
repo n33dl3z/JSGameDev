@@ -4,10 +4,8 @@ var mainPlayer = {
     speed: 10,
     power: 1,
 
-    messenger: function (message0, message1, message2){
-        alert(message0);
-        alert(message1);
-        alert(message2);
+    messenger: function (message) {
+        alert("this is some of the info you gave me, in order." + message);
     }
 }
 
@@ -17,7 +15,10 @@ alert("Welcome " + mainPlayer.name);
 var phrases = [
     prompt("Please enter some info for me."), 
     prompt("Enter different info for me."), 
-    prompt("And again.")
+    prompt("And again."),
+    prompt("Keep on going."),
 ];
 
-mainPlayer.messenger(phrases[0], phrases[1], phrases[2]);
+for (var i = 0 ; i < phrases.length ; i++){
+    mainPlayer.messenger(phrases[i]);
+}
