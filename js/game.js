@@ -4,7 +4,7 @@ var mainPlayer = {
     speed: 10,
     power: 1,
 
-    messenger = function (message0, message1, message2){
+    messenger: function (message0, message1, message2){
         alert(message0);
         alert(message1);
         alert(message2);
